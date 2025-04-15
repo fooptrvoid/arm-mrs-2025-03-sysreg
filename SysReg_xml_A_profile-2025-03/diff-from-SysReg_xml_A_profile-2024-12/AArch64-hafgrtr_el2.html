@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ext="http://exslt.org/common">
+  <head>
+    <title>HAFGRTR_EL2</title>
+    <link href="insn.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body><div align="center" class="htmldiff_header"><table><tbody><tr><td class="old">(old) </td><td class="explain">htmldiff from-</td><td class="new">(new) </td></tr></tbody></table></div><table style="margin: 0 auto;"><tr><td><div class="topbar"><a href="AArch32-regindex.html">AArch32 Registers</a></div></td><td><div class="topbar"><a href="AArch64-regindex.html">AArch64 Registers</a></div></td><td><div class="topbar"><a href="AArch32-sysindex.html">AArch32 Instructions</a></div></td><td><div class="topbar"><a href="AArch64-sysindex.html">AArch64 Instructions</a></div></td><td><div class="topbar"><a href="enc_index.html">Index by Encoding</a></div></td><td><div class="topbar"><a href="ext_alpha_index.html">External Registers</a></div></td><td><div class="topbar"><a href="ext_enc_index.html">External Registers by Offset</a></div></td><td><div class="topbar"><a href="func_index.html">Registers by Functional Group</a></div></td><td><div class="topbar"><a href="notice.html">Proprietary Notice</a></div></td></tr></table><hr/><h1 class="register-section">HAFGRTR_EL2, Hypervisor Activity Monitors Fine-Grained Read Trap Register</h1><p>The HAFGRTR_EL2 characteristics are:</p><h2>Purpose</h2>
+        <p>Provides controls for traps of <span class="instruction">MRS</span> reads of Activity Monitors System registers.</p>
+      <h2>Configuration</h2><p>This register is present only when FEAT_AMUv1 is implemented, FEAT_FGT is implemented, and FEAT_AA64 is implemented. Otherwise, direct accesses to HAFGRTR_EL2 are <span class="arm-defined-word">UNDEFINED</span>.</p>
+        <p>If EL2 is not implemented, this register is <span class="arm-defined-word">RES0</span> from EL3.</p>
+      <h2>Attributes</h2>
+        <p>HAFGRTR_EL2 is a 64-bit register.</p>
+      <h2>Field descriptions</h2><table class="regdiagram" id="fieldset_0"><thead><tr><td>63</td><td>62</td><td>61</td><td>60</td><td>59</td><td>58</td><td>57</td><td>56</td><td>55</td><td>54</td><td>53</td><td>52</td><td>51</td><td>50</td><td>49</td><td>48</td><td>47</td><td>46</td><td>45</td><td>44</td><td>43</td><td>42</td><td>41</td><td>40</td><td>39</td><td>38</td><td>37</td><td>36</td><td>35</td><td>34</td><td>33</td><td>32</td></tr></thead><tfoot><tr><td>31</td><td>30</td><td>29</td><td>28</td><td>27</td><td>26</td><td>25</td><td>24</td><td>23</td><td>22</td><td>21</td><td>20</td><td>19</td><td>18</td><td>17</td><td>16</td><td>15</td><td>14</td><td>13</td><td>12</td><td>11</td><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td><td>3</td><td>2</td><td>1</td><td>0</td></tr></tfoot><tbody><tr class="firstrow"><td class="lr" colspan="14"><a href="#fieldset_0-63_50">RES0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_49"><ins class="nocount">AMEVTYPER115_EL0</ins></a><a href="#fieldset_0-49_49-1"><del class="nocount">Bit[49]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_48"><ins class="nocount">AMEVCNTR115_EL0</ins></a><a href="#fieldset_0-48_48-1"><del class="nocount">Bit[48]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-47_47"><ins class="nocount">AMEVTYPER114_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[47]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-46_46"><ins class="nocount">AMEVCNTR114_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[46]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-45_45"><ins class="nocount">AMEVTYPER113_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[45]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-44_44"><ins class="nocount">AMEVCNTR113_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[44]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-43_43"><ins class="nocount">AMEVTYPER112_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[43]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-42_42"><ins class="nocount">AMEVCNTR112_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[42]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-41_41"><ins class="nocount">AMEVTYPER111_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[41]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-40_40"><ins class="nocount">AMEVCNTR111_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[40]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-39_39"><ins class="nocount">AMEVTYPER110_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[39]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-38_38"><ins class="nocount">AMEVCNTR110_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[38]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-37_37"><ins class="nocount">AMEVTYPER19_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[37]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-36_36"><ins class="nocount">AMEVCNTR19_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[36]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-35_35"><ins class="nocount">AMEVTYPER18_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[35]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-34_34"><ins class="nocount">AMEVCNTR18_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[34]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-33_33"><ins class="nocount">AMEVTYPER17_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[33]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-32_32"><ins class="nocount">AMEVCNTR17_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[32]</del></a></td></tr><tr class="firstrow"><td class="lr" colspan="1"><a href="#fieldset_0-49_19-31_31"><ins class="nocount">AMEVTYPER16_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[31]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-30_30"><ins class="nocount">AMEVCNTR16_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[30]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-29_29"><ins class="nocount">AMEVTYPER15_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[29]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-28_28"><ins class="nocount">AMEVCNTR15_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[28]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-27_27"><ins class="nocount">AMEVTYPER14_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[27]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-26_26"><ins class="nocount">AMEVCNTR14_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[26]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-25_25"><ins class="nocount">AMEVTYPER13_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[25]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-24_24"><ins class="nocount">AMEVCNTR13_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[24]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-23_23"><ins class="nocount">AMEVTYPER12_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[23]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-22_22"><ins class="nocount">AMEVCNTR12_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[22]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-21_21"><ins class="nocount">AMEVTYPER11_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[21]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-20_20"><ins class="nocount">AMEVCNTR11_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[20]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-49_19-19_19"><ins class="nocount">AMEVTYPER10_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[19]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-48_18-18_18"><ins class="nocount">AMEVCNTR10_EL0</ins></a><a href="#fieldset_0-17_17"><del class="nocount">Bit[18]</del></a></td><td class="lr" colspan="1"><a href="#fieldset_0-17_17">AMCNTEN1</a></td><td class="lr" colspan="12"><a href="#fieldset_0-16_5">RES0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-4_1">AMEVCNTR03_EL0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-4_1">AMEVCNTR02_EL0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-4_1">AMEVCNTR01_EL0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-4_1">AMEVCNTR00_EL0</a></td><td class="lr" colspan="1"><a href="#fieldset_0-17_0-0_0">AMCNTEN0</a></td></tr></tbody></table><h4 id="fieldset_0-63_50">Bits [63:50]</h4><div class="field">
+      <p>Reserved, <span class="arm-defined-word">RES0</span>.</p>
+    </div><h4 id="fieldset_0-48_48-1"><del>AMEVCNTR1&lt;x>_EL0, bit [18+2x], for x = 15 to 0</del><span class="condition"><br/><del>When AMEVCNTR1&lt;x> is implemented:
+                        </del></span></h4><div class="field"><del>
+      </del><p><del>Trap </del><span class="instruction"><del>MRS</del></span><del> reads of </del><a href="AArch64-amevcntr1n_el0.html"><del>AMEVCNTR1&lt;x>_EL0</del></a><del> at EL1 and EL0 using AArch64 and </del><span class="instruction"><del>MRC</del></span><del> reads of </del><a href="AArch32-amevcntr1n.html"><del>AMEVCNTR1&lt;x></del></a><del> at EL0 using AArch32 when EL1 is using AArch64 to EL2.</del></p><del>
+    </del><table class="valuetable"><tr><th><del>AMEVCNTR1&lt;x>_EL0</del></th><th><del>Meaning</del></th></tr><tr><td class="bitfield"><del>0b0</del></td><td><del>
+          </del><p><span class="instruction"><del>MRS</del></span><del> reads of </del><a href="AArch64-amevcntr1n_el0.html"><del>AMEVCNTR1&lt;x>_EL0</del></a><del> at EL1 and EL0 using AArch64 and </del><span class="instruction"><del>MRC</del></span><del> reads of </del><a href="AArch32-amevcntr1n.html"><del>AMEVCNTR1&lt;x></del></a><del> at EL0 using AArch32 are not trapped by this mechanism.</del></p><del>
+        </del></td></tr><tr><td class="bitfield"><del>0b1</del></td><td><p><del>If EL2 is implemented and enabled in the current Security state, the Effective value of </del><a href="AArch64-hcr_el2.html"><del>HCR_EL2</del></a><del>.{E2H, TGE} is not {1, 1}, EL1 is using AArch64, and either EL3 is not implemented or </del><a href="AArch64-scr_el3.html"><del>SCR_EL3</del></a><del>.FGTEn == 1, then, unless the read generates a higher priority exception:</del></p><del>
+</del><ul><del>
+</del><li><span class="instruction"><del>MRS</del></span><del> reads of </del><a href="AArch64-amevcntr1n_el0.html"><del>AMEVCNTR1&lt;x>_EL0</del></a><del> at EL1 and EL0 using AArch64 are trapped to EL2 and reported with EC syndrome value </del><span class="hexnumber"><del>0x18</del></span><del>.
+</del></li><li><span class="instruction"><del>MRC</del></span><del> reads of </del><a href="AArch32-amevcntr1n.html"><del>AMEVCNTR1&lt;x></del></a><del> at EL0 using AArch32 are trapped to EL2 and reported with EC syndrome value </del><span class="hexnumber"><del>0x03</del></span><del>.
+</del></li></ul></td></tr></table><p><del>The reset behavior of this field is:</del></p><ul><li><del>On a Warm reset, when the highest implemented Exception level is EL2, 
+      this field resets
+       to </del><span class="binarynumber"><del>'0'</del></span><del>.
+</del></li></ul></div><h4 id="fieldset_0-48_48-2"><span class="condition"><br/><del>Otherwise:
+                        </del></span></h4><div class="field"><del>
+      </del><p><del>Reserved, </del><span class="arm-defined-word"><del>RES0</del></span><del>.</del></p><del>
+    </del></div><h4 id="fieldset_0-49_49"><ins>AMEVTYPER1&lt;x>_EL0, bit [19+2x], for x = 15 to 0</ins></h4><h4 id="fieldset_0-49_49-1"><del>AMEVTYPER1&lt;x>_EL0, bit [19+2x], for x = 15 to 0</del><span class="condition"><br/><del>When AMEVTYPER1&lt;x> is implemented:
+                        </del></span></h4><div class="field">
+      <p>Trap <span class="instruction">MRS</span> reads of <a href="AArch64-amevtyper1n_el0.html">AMEVTYPER1&lt;x>_EL0</a> at EL1 and EL0 using AArch64 and <span class="instruction">MRC</span> reads of <a href="AArch32-amevtyper1n.html">AMEVTYPER1&lt;x></a> at EL0 using AArch32 when EL1 is using AArch64 to EL2.</p>
+    <table class="valuetable"><tr><th>AMEVTYPER1&lt;x>_EL0</th><th>Meaning</th></tr><tr><td class="bitfield">0b0</td><td>
+          <p><span class="instruction">MRS</span> reads of <a href="AArch64-amevtyper1n_el0.html">AMEVTYPER1&lt;x>_EL0</a> at EL1 and EL0 using AArch64 and <span class="instruction">MRC</span> reads of <a href="AArch32-amevtyper1n.html">AMEVTYPER1&lt;x></a> at EL0 using AArch32 are not trapped by this mechanism.</p>
+        </td></tr><tr><td class="bitfield">0b1</td><td><p>If EL2 is implemented and enabled in the current Security state, the Effective value of <a href="AArch64-hcr_el2.html">HCR_EL2</a>.{E2H, TGE} is not {1, 1}, EL1 is using AArch64, and either EL3 is not implemented or <a href="AArch64-scr_el3.html">SCR_EL3</a>.FGTEn == 1, then, unless the read generates a higher priority exception:</p>
+<ul>
+<li><span class="instruction">MRS</span> reads of <a href="AArch64-amevtyper1n_el0.html">AMEVTYPER1&lt;x>_EL0</a> at EL1 and EL0 using AArch64 are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x18</span>.
+</li><li><span class="instruction">MRC</span> reads of <a href="AArch32-amevtyper1n.html">AMEVTYPER1&lt;x></a> at EL0 using AArch32 are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x03</span>.
+</li></ul></td></tr></table><p>The reset behavior of this field is:</p><ul><li>On a Warm reset, when the highest implemented Exception level is EL2, 
+      this field resets
+       to <span class="binarynumber">'0'</span>.
+</li></ul><p><ins>Accessing this field has the following behavior:</ins></p><ul><li><ins>When x >= UInt(AMCGCR_EL0.CG1NC), access to this field
+                            is </ins><span class="access_level"><ins>
+          </ins><span class="arm-defined-word"><ins>RES0</ins></span><ins>
+        </ins></span><ins>.
+                        </ins></li><li><ins>When !IsG1ActivityMonitorImplemented(x), access to this field
+                            is </ins><span class="access_level"><ins>
+          </ins><span class="arm-defined-word"><ins>RES0</ins></span><ins>
+        </ins></span><ins>.
+                        </ins></li></ul></div><h4 id="fieldset_0-48_48"><ins>AMEVCNTR1&lt;x>_EL0, bit [18+2x], for x = 15 to 0</ins></h4><h4 id="fieldset_0-49_49-2"><span class="condition"><br/><del>Otherwise:
+                        </del></span></h4><div class="field">
+      <p><ins>Trap</ins><del>Reserved,</del> <span class="instruction"><ins>MRS</ins><del>RES0</del></span><ins> reads of </ins><a href="AArch64-amevcntr1n_el0.html"><ins>AMEVCNTR1&lt;x>_EL0</ins></a><ins> at EL1 and EL0 using AArch64 and </ins><span class="instruction"><ins>MRC</ins></span><ins> reads of </ins><a href="AArch32-amevcntr1n.html"><ins>AMEVCNTR1&lt;x></ins></a> <ins>at EL0 using AArch32 when EL1 is using AArch64 to EL2.</ins><del>.</del></p>
+    <table class="valuetable"><tr><th><ins>AMEVCNTR1&lt;x>_EL0</ins></th><th><ins>Meaning</ins></th></tr><tr><td class="bitfield"><ins>0b0</ins></td><td><ins>
+          </ins><p><span class="instruction"><ins>MRS</ins></span><ins> reads of </ins><a href="AArch64-amevcntr1n_el0.html"><ins>AMEVCNTR1&lt;x>_EL0</ins></a><ins> at EL1 and EL0 using AArch64 and </ins><span class="instruction"><ins>MRC</ins></span><ins> reads of </ins><a href="AArch32-amevcntr1n.html"><ins>AMEVCNTR1&lt;x></ins></a><ins> at EL0 using AArch32 are not trapped by this mechanism.</ins></p><ins>
+        </ins></td></tr><tr><td class="bitfield"><ins>0b1</ins></td><td><p><ins>If EL2 is implemented and enabled in the current Security state, the Effective value of </ins><a href="AArch64-hcr_el2.html"><ins>HCR_EL2</ins></a><ins>.{E2H, TGE} is not {1, 1}, EL1 is using AArch64, and either EL3 is not implemented or </ins><a href="AArch64-scr_el3.html"><ins>SCR_EL3</ins></a><ins>.FGTEn == 1, then, unless the read generates a higher priority exception:</ins></p><ins>
+</ins><ul><ins>
+</ins><li><span class="instruction"><ins>MRS</ins></span><ins> reads of </ins><a href="AArch64-amevcntr1n_el0.html"><ins>AMEVCNTR1&lt;x>_EL0</ins></a><ins> at EL1 and EL0 using AArch64 are trapped to EL2 and reported with EC syndrome value </ins><span class="hexnumber"><ins>0x18</ins></span><ins>.
+</ins></li><li><span class="instruction"><ins>MRC</ins></span><ins> reads of </ins><a href="AArch32-amevcntr1n.html"><ins>AMEVCNTR1&lt;x></ins></a><ins> at EL0 using AArch32 are trapped to EL2 and reported with EC syndrome value </ins><span class="hexnumber"><ins>0x03</ins></span><ins>.
+</ins></li></ul></td></tr></table><p><ins>The reset behavior of this field is:</ins></p><ul><li><ins>On a Warm reset, when the highest implemented Exception level is EL2, 
+      this field resets
+       to </ins><span class="binarynumber"><ins>'0'</ins></span><ins>.
+</ins></li></ul><p><ins>Accessing this field has the following behavior:</ins></p><ul><li><ins>When x >= UInt(AMCGCR_EL0.CG1NC), access to this field
+                            is </ins><span class="access_level"><ins>
+          </ins><span class="arm-defined-word"><ins>RES0</ins></span><ins>
+        </ins></span><ins>.
+                        </ins></li><li><ins>When !IsG1ActivityMonitorImplemented(x), access to this field
+                            is </ins><span class="access_level"><ins>
+          </ins><span class="arm-defined-word"><ins>RES0</ins></span><ins>
+        </ins></span><ins>.
+                        </ins></li></ul></div><h4 id="fieldset_0-17_17">AMCNTEN&lt;x>, bit [17x], for x = 1 to 0</h4><div class="field"><p>Trap <span class="instruction">MRS</span> reads and <span class="instruction">MRC</span> reads of multiple System registers.</p>
+<p>Enables a trap to EL2 the following operations:</p>
+<ul>
+<li>At EL1 and EL0 using AArch64: <span class="instruction">MRS</span> reads of AMCNTENCLR&lt;x>_EL0 and AMCNTENSET&lt;x>_EL0.
+</li><li>At EL0 using AArch32 when EL1 is using AArch64: <span class="instruction">MRC</span> reads of AMCNTENCLR&lt;x> and AMCNTENSET&lt;x>.
+</li></ul><table class="valuetable"><tr><th>AMCNTEN&lt;x></th><th>Meaning</th></tr><tr><td class="bitfield">0b0</td><td>
+          <p>The operations listed above are not trapped by this mechanism.</p>
+        </td></tr><tr><td class="bitfield">0b1</td><td><p>If EL2 is implemented and enabled in the current Security state, the Effective value of <a href="AArch64-hcr_el2.html">HCR_EL2</a>.{E2H, TGE} is not {1, 1}, EL1 is using AArch64, and either EL3 is not implemented or <a href="AArch64-scr_el3.html">SCR_EL3</a>.FGTEn == 1, then, unless the read generates a higher priority exception:</p>
+<ul>
+<li><span class="instruction">MRS</span> reads at EL1 and EL0 using AArch64 of AMCNTENCLR&lt;x>_EL0 and AMCNTENSET&lt;x>_EL0 are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x18</span>.
+</li><li><span class="instruction">MRC</span> reads at EL0 using AArch32 of AMCNTENCLR&lt;x> and AMCNTENSET&lt;x> are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x03</span>.
+</li></ul></td></tr></table><p>The reset behavior of this field is:</p><ul><li>On a Warm reset, when the highest implemented Exception level is EL2, 
+      this field resets
+       to <span class="binarynumber">'0'</span>.
+</li></ul></div><h4 id="fieldset_0-16_5">Bits [16:5]</h4><div class="field">
+      <p>Reserved, <span class="arm-defined-word">RES0</span>.</p>
+    </div><h4 id="fieldset_0-4_1">AMEVCNTR0&lt;x>_EL0, bit [x+1], for x = 3 to 0</h4><div class="field">
+      <p>Trap <span class="instruction">MRS</span> reads of <a href="AArch64-amevcntr0n_el0.html">AMEVCNTR0&lt;x>_EL0</a> at EL1 and EL0 using AArch64 and <span class="instruction">MRC</span> reads of <a href="AArch32-amevcntr0n.html">AMEVCNTR0&lt;x></a> at EL0 using AArch32 when EL1 is using AArch64 to EL2.</p>
+    <table class="valuetable"><tr><th>AMEVCNTR0&lt;x>_EL0</th><th>Meaning</th></tr><tr><td class="bitfield">0b0</td><td>
+          <p><span class="instruction">MRS</span> reads of <a href="AArch64-amevcntr0n_el0.html">AMEVCNTR0&lt;x>_EL0</a> at EL1 and EL0 using AArch64 and <span class="instruction">MRC</span> reads of <a href="AArch32-amevcntr0n.html">AMEVCNTR0&lt;x></a> at EL0 using AArch32 are not trapped by this mechanism.</p>
+        </td></tr><tr><td class="bitfield">0b1</td><td><p>If EL2 is implemented and enabled in the current Security state, the Effective value of <a href="AArch64-hcr_el2.html">HCR_EL2</a>.{E2H, TGE} is not {1, 1}, EL1 is using AArch64, and either EL3 is not implemented or <a href="AArch64-scr_el3.html">SCR_EL3</a>.FGTEn == 1, then, unless the read generates a higher priority exception:</p>
+<ul>
+<li><span class="instruction">MRS</span> reads of <a href="AArch64-amevcntr0n_el0.html">AMEVCNTR0&lt;x>_EL0</a> at EL1 and EL0 using AArch64 are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x18</span>.
+</li><li><span class="instruction">MRC</span> reads of <a href="AArch32-amevcntr0n.html">AMEVCNTR0&lt;x></a> at EL0 using AArch32 are trapped to EL2 and reported with EC syndrome value <span class="hexnumber">0x03</span>.
+</li></ul></td></tr></table><p>The reset behavior of this field is:</p><ul><li>On a Warm reset, when the highest implemented Exception level is EL2, 
+      this field resets
+       to <span class="binarynumber">'0'</span>.
+</li></ul><p><ins>When x >= 4, access to this field is </ins><span class="access_level"><ins>
+          </ins><span class="arm-defined-word"><ins>RES0</ins></span><ins>
+        </ins></span><ins>.</ins></p></div><div class="access_mechanisms"><h2>Accessing HAFGRTR_EL2</h2><p>Accesses to this register use the following encodings in the System register encoding space:</p><div><h4 class="assembler">MRS &lt;Xt>, HAFGRTR_EL2</h4></div><table class="access_instructions"><tr><th>op0</th><th>op1</th><th>CRn</th><th>CRm</th><th>op2</th></tr><tr><td>0b11</td><td>0b100</td><td>0b0011</td><td>0b0001</td><td>0b110</td></tr></table><p class="pseudocode">
+if !(IsFeatureImplemented(FEAT_AMUv1) &amp;&amp; IsFeatureImplemented(FEAT_FGT) &amp;&amp; IsFeatureImplemented(FEAT_AA64)) then
+    UNDEFINED;
+elsif PSTATE.EL == EL0 then
+    UNDEFINED;
+elsif PSTATE.EL == EL1 then
+    if EffectiveHCR_EL2_NVx() IN {'1x1'} then
+        X[t, 64] = NVMem[0x1E8];
+    elsif EffectiveHCR_EL2_NVx() IN {'xx1'} then
+        AArch64.SystemAccessTrap(EL2, 0x18);
+    else
+        UNDEFINED;
+elsif PSTATE.EL == EL2 then
+    if HaveEL(EL3) &amp;&amp; EL3SDDUndefPriority() &amp;&amp; SCR_EL3.FGTEn == '0' then
+        UNDEFINED;
+    elsif HaveEL(EL3) &amp;&amp; SCR_EL3.FGTEn == '0' then
+        if EL3SDDUndef() then
+            UNDEFINED;
+        else
+            AArch64.SystemAccessTrap(EL3, 0x18);
+    else
+        X[t, 64] = HAFGRTR_EL2;
+elsif PSTATE.EL == EL3 then
+    X[t, 64] = HAFGRTR_EL2;
+                </p><div><h4 class="assembler">MSR HAFGRTR_EL2, &lt;Xt></h4></div><table class="access_instructions"><tr><th>op0</th><th>op1</th><th>CRn</th><th>CRm</th><th>op2</th></tr><tr><td>0b11</td><td>0b100</td><td>0b0011</td><td>0b0001</td><td>0b110</td></tr></table><p class="pseudocode">
+if !(IsFeatureImplemented(FEAT_AMUv1) &amp;&amp; IsFeatureImplemented(FEAT_FGT) &amp;&amp; IsFeatureImplemented(FEAT_AA64)) then
+    UNDEFINED;
+elsif PSTATE.EL == EL0 then
+    UNDEFINED;
+elsif PSTATE.EL == EL1 then
+    if EffectiveHCR_EL2_NVx() IN {'1x1'} then
+        NVMem[0x1E8] = X[t, 64];
+    elsif EffectiveHCR_EL2_NVx() IN {'xx1'} then
+        AArch64.SystemAccessTrap(EL2, 0x18);
+    else
+        UNDEFINED;
+elsif PSTATE.EL == EL2 then
+    if HaveEL(EL3) &amp;&amp; EL3SDDUndefPriority() &amp;&amp; SCR_EL3.FGTEn == '0' then
+        UNDEFINED;
+    elsif HaveEL(EL3) &amp;&amp; SCR_EL3.FGTEn == '0' then
+        if EL3SDDUndef() then
+            UNDEFINED;
+        else
+            AArch64.SystemAccessTrap(EL3, 0x18);
+    else
+        HAFGRTR_EL2 = X[t, 64];
+elsif PSTATE.EL == EL3 then
+    HAFGRTR_EL2 = X[t, 64];
+                </p></div><hr class="bottom_line"/><table style="margin: 0 auto;"><tr><td><div class="topbar"><a href="AArch32-regindex.html">AArch32 Registers</a></div></td><td><div class="topbar"><a href="AArch64-regindex.html">AArch64 Registers</a></div></td><td><div class="topbar"><a href="AArch32-sysindex.html">AArch32 Instructions</a></div></td><td><div class="topbar"><a href="AArch64-sysindex.html">AArch64 Instructions</a></div></td><td><div class="topbar"><a href="enc_index.html">Index by Encoding</a></div></td><td><div class="topbar"><a href="ext_alpha_index.html">External Registers</a></div></td><td><div class="topbar"><a href="ext_enc_index.html">External Registers by Offset</a></div></td><td><div class="topbar"><a href="func_index.html">Registers by Functional Group</a></div></td><td><div class="topbar"><a href="notice.html">Proprietary Notice</a></div></td></tr></table><p class="versions"><ins>21</ins><del>18</del>/03/2025 <ins>17</ins><del>10</del>:<ins>52</ins><del>59</del>; <ins>154105dd5041532b480d9ef0c018b8420cbe5c19</ins><del>6f6b106801db2310344984eeeac8a14477b4909e</del></p><p class="copyconf">Copyright © <ins>2010-2025</ins><del>2010-2024</del> Arm Limited or its affiliates. All rights reserved. This document is Non-Confidential.</p><div align="center" class="htmldiff_header"><table><tbody><tr><td class="old">(old) </td><td class="explain">htmldiff from-</td><td class="new">(new) </td></tr></tbody></table></div></body>
+</html>
